@@ -6,11 +6,11 @@ Git tracks changes by taking "snapshots" of your project at specific points in t
 ## 2. The Three Git States
 To understand how Git works, it is helpful to visualize the three distinct states your files travel through:
 
-Working Directory: Your project folder on your computer where you actively edit, add, or delete files. It is your "sandbox."
+Working Directory: Project folder on computer where we actively edit, add, or delete files. It is your "sandbox."
 
-Staging Area (Index): A file (index) that stores information about what will go into your next commit. You "stage" files here to prepare them for a permanent save.
+Staging Area (Index): A file (index) that stores information about what will go into your next commit. We "stage" files here to prepare them for a permanent save.
 
-Local Repository (HEAD): Where Git permanently stores the snapshots of your project. Once you "commit" files, they move from the Staging Area into the Local Repository, creating a secure point in history.
+Local Repository (HEAD): Where Git permanently stores the snapshots of our project. Once we "commit" files, they move from the Staging Area into the Local Repository, creating a secure point in history.
 
 
 # The sequence of Git commands used:
@@ -20,8 +20,8 @@ git init
 ## 2. Set the main branch name
 git branch -M main
 
-## 2. Add the remote URL (replace with your actual repository URL)
-git remote add origin <your-repository-url>
+## 2. Add the remote URL
+git remote add origin <repository-url>
 
 ## 2. Create the README.md file
 
