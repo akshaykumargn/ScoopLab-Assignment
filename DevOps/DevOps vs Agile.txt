@@ -1,0 +1,21 @@
+Agile and DevOps Assignment
+
+1. Agile vs. DevOps: Comparison Table
+
+| Feature	  | Agile (Development Focus)					| DevOps (Operations Focus) 							|
+| :--- 		  | :--- 										| :---													|
+| Primary Goal| Delivering high-quality code in iterations. | Delivering high-quality software reliably and fast. 	|
+| Scope 	  | Development team and product owners. 		| Entire IT organization (Dev + Ops). |
+| Key Metric  | Customer satisfaction & velocity. 			| Deployment frequency & MTTR (Mean Time To Recovery).	|
+
+2. Scenarios: Bottlenecks and Solutions
+
+The Agile Solution (Communication Bottleneck)
+Scenario: A company is building a mobile app. The product manager sends a 50-page requirement document to the developers at the start of the year. Six months later, the developers finish, but the market has changed, and the customers no longer want those features.
+The Bottleneck: Lack of frequent feedback and silos between the business and development teams.
+Agile's Solution: Agile breaks the project into small, two-week "sprints." By demonstrating work to stakeholders every two weeks, the team receives immediate feedback, allowing them to pivot based on actual customer needs rather than outdated documentation.
+
+The DevOps Solution (Deployment Bottleneck)
+Scenario: The developers finish a new feature and "throw it over the wall" to the Operations team. Because the developers use different environment configurations than the Ops team, the application crashes immediately upon deployment. It takes the Ops team three days of manual troubleshooting to fix it.
+The Bottleneck: Environment inconsistency and manual, error-prone deployment processes.
+DevOps' Solution: DevOps uses Infrastructure as Code (IaC) and Automated CI/CD pipelines. By ensuring the development and production environments are identical and automating the deployment process, the software is deployed reliably in minutes, not days.
