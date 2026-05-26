@@ -8,11 +8,11 @@
 
 ### Manual vs. Automated Approval Comparison
 
-| Feature | Continuous Delivery | Continuous Deployment |
-| :--- | :--- | :--- |
-| **Testing** | Automated | Automated |
-| **Deployment Trigger** | **Manual** (Human gatekeeper) | **Automated** (Pipeline auto-push) |
-| **Production Risk** | Lower (Human oversight) | Higher (Requires robust automated testing) |
+| Feature                | Continuous Delivery           | Continuous Deployment                      |
+| :---                   | :---                          | :---                                       |
+| **Testing**            | Automated                     | Automated                                  |
+| **Deployment Trigger** | **Manual** (Human gatekeeper) | **Automated** (Pipeline auto-push)         |
+| **Production Risk**    | Lower (Human oversight)       | Higher (Requires robust automated testing) |
 
 ---
 
