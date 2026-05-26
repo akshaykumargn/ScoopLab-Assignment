@@ -1,0 +1,36 @@
+# CI/CD Concepts Assignment
+
+## 1. Differentiating CI, CD (Delivery), and CD (Deployment)
+
+* **Continuous Integration (CI):** Developers frequently merge code changes into a shared central repository. Automated builds and tests are triggered upon every commit to detect integration errors early.
+* **Continuous Delivery (CD):** An extension of CI. Every code change that passes all automated tests is automatically built, packaged, and prepared for a release to production. However, the final push to the production environment is a **manual decision**.
+* **Continuous Deployment (CD):** The final step of the automation process. Every code change that passes the entire pipeline is **automatically deployed** to the production environment without any manual intervention.
+
+### Manual vs. Automated Approval Comparison
+
+| Feature | Continuous Delivery | Continuous Deployment |
+| :--- | :--- | :--- |
+| **Testing** | Automated | Automated |
+| **Deployment Trigger** | **Manual** (Human gatekeeper) | **Automated** (Pipeline auto-push) |
+| **Production Risk** | Lower (Human oversight) | Higher (Requires robust automated testing) |
+
+---
+
+## 2. Theoretical CI/CD Pipeline for a Web Application
+
+This pipeline automates the lifecycle of a simple Node.js web application.
+
+### Pipeline Flow & Tooling
+
+1.  **Source Code Management (SCM):** Developers push code to **GitHub**.
+2.  **Continuous Integration (Build & Test):** **Jenkins** detects the change, triggers a build, and runs unit/linting tests.
+3.  **Artifact Creation:** Build produces a **Docker** image.
+4.  **Container Registry:** The image is pushed to **Docker Hub** (or Amazon ECR).
+5.  **Deployment (Staging):** **Jenkins** triggers a deployment to a staging environment (e.g., **Kubernetes/Minikube**).
+6.  **Integration Testing:** Automated UI/API tests run against the staging environment.
+7.  **Release (Production):**
+    * *Delivery:* A developer clicks "Deploy" in Jenkins to push to production.
+    * *Deployment:* The pipeline automatically updates the production cluster.
+8.  **Monitoring:** **Prometheus/Grafana** monitor application health post-deployment.
+
+---
