@@ -12,3 +12,6 @@ The DevOps lifecycle is represented by an "infinity loop," symbolizing the conti
 8. Monitor: Gathering performance data and user feedback to identify issues, which then informs the next planning cycle.
 
 ---
+
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/6cde3c55-a569-4705-a530-f0940ca384b3" />
